@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuşak Balık Menü</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#3b0f19;
+    color:#f5d7a1;
+    text-align:center;
+}
+header{
+    padding:30px 20px;
+    font-size:32px;
+    font-weight:bold;
+    border-bottom:2px solid #c9a227;
+}
+button{
+    background:#c9a227;
+    border:none;
+    padding:15px 25px;
+    margin:15px;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:8px;
+}
+.section{
+    display:none;
+    padding:20px;
+}
+h2{
+    border-bottom:1px solid #c9a227;
+    padding-bottom:10px;
+}
+.item{
+    display:flex;
+    justify-content:space-between;
+    margin:8px 0;
+}
+footer{
+    margin-top:40px;
+    padding:20px;
+    border-top:2px solid #c9a227;
+}
+</style>
+<script>
+function showSection(id){
+    document.querySelectorAll('.section').forEach(s=>s.style.display='none');
+    document.getElementById(id).style.display='block';
+}
+</script>
+</head>
+<body>
+
+<header>KUŞAK BALIK</header>
+
+<div>
+<button onclick="showSection('food')">🥘 Yemek Menüsü</button>
+<button onclick="showSection('drinks')">🍸 İçecek Menüsü</button>
+</div>
+
+<div id="food" class="section">
+<h2>Yemek Menüsü</h2>
+<p>Yemek menünüz burada görüntülenecek.</p>
+</div>
+
+<div id="drinks" class="section">
+<h2>İçecek Menüsü</h2>
+<p>İçecek menünüz burada görüntülenecek.</p>
+</div>
+
+<footer>Afiyet Olsun</footer>
+
+</body>
+</html>

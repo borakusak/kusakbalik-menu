@@ -11,7 +11,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:#3b0f19;
+background:#3b0f19 url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
 color:#f5d7a1;
 text-align:center;
 
@@ -33,7 +33,20 @@ border-bottom:2px solid #c9a227;
 width:150px;
 height:auto;
 display:block;
-margin:20px auto 10px auto;
+margin:20px auto;
+opacity:0;
+animation:logoFade 1.5s ease forwards;
+}
+
+@keyframes logoFade{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
 }
 
 .logo-area{
@@ -53,11 +66,17 @@ background:#c9a227;
 border:none;
 padding:16px 35px;
 margin:10px;
-font-size:18px;
+font-size:20px;
 border-radius:14px;
 cursor:pointer;
 width:80%;
 max-width:320px;
+transition:all 0.25s ease;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 6px 15px rgba(0,0,0,0.4);
 }
 
 .menu{
@@ -66,6 +85,7 @@ padding:20px;
 }
 
 iframe{
+transition:0.4s ease;
 width:95%;
 height:800px;
 border:none;

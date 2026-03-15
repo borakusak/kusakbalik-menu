@@ -11,7 +11,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:#3b0f19 url("https://www.transparenttextures.com/patterns/dark-mosaic.png");
+background:linear-gradient(#4b0f19,#2a0710);
 color:#f5d7a1;
 text-align:center;
 
@@ -57,6 +57,7 @@ margin:auto;
 }
 
 .slogan{
+<div class="line"></div>
 font-size:18px;
 margin-top:5px;
 margin-bottom:25px;
@@ -101,7 +102,21 @@ width:65%;
 margin-left:auto;
 margin-right:auto;
 }
+.line{
+width:120px;
+height:2px;
+background:#c9a227;
+margin:20px auto;
+}
 
+button{
+transition:0.2s;
+box-shadow:0 5px 12px rgba(0,0,0,0.3);
+}
+
+button:active{
+transform:scale(0.97);
+  }
 </style>
 
 <script>
@@ -129,6 +144,7 @@ document.getElementById(id).style.display="block";
 
 
 <p class="slogan">Denizden Sofranıza</p>
+<div class="line"></div>
 
 </div>
 

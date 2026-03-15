@@ -119,18 +119,24 @@ transform:scale(0.97);
   }
 </style>
 
-<script>
+</script>
+function showMenu(menu){
 
-function showMenu(id){
+document.getElementById("menuArea").style.display="block";
 
-document.getElementById("yemek").style.display="none";
-document.getElementById("icecek").style.display="none";
-document.getElementById("tatli").style.display="none";
-
-document.getElementById(id).style.display="block";
-
+if(menu=="yemek"){
+document.getElementById("menuFrame").src="yemek.png";
 }
 
+if(menu=="icecek"){
+document.getElementById("menuFrame").src="icecek.png";
+}
+
+if(menu=="tatli"){
+document.getElementById("menuFrame").src="tatli.png";
+}
+
+}
 </script>
 
 </head>
@@ -156,7 +162,9 @@ document.getElementById(id).style.display="block";
 <button onclick="showMenu('yemek')">🍽 Yemek Menüsü</button>
 <button onclick="showMenu('icecek')">🍹 İçecek Menüsü</button>
 <button onclick="showMenu('tatli')">🍰 Tatlı Menüsü</button>
-
+<div id="menuArea" class="menu">
+<iframe id="menuFrame"></iframe>
+</div>
 <footer>
 Afiyet Olsun
 </footer>

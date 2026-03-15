@@ -120,23 +120,7 @@ transform:scale(0.97);
 </style>
 
 <script>
-function showMenu(menu){
-
-document.getElementById("menuArea").style.display="block";
-
-if(menu=="yemek"){
-document.getElementById("menuFrame").src="yemek.png";
-}
-
-if(menu=="icecek"){
-document.getElementById("menuFrame").src="icecek.png";
-}
-
-if(menu=="tatli"){
-document.getElementById("menuFrame").src="tatli.png";
-}
-
-}
+  
 </script>
 
 </head>
@@ -159,12 +143,17 @@ document.getElementById("menuFrame").src="tatli.png";
 
 </div>
 
-<button onclick="showMenu('yemek')">🍽 Yemek Menüsü</button>
-<button onclick="showMenu('icecek')">🍹 İçecek Menüsü</button>
-<button onclick="showMenu('tatli')">🍰 Tatlı Menüsü</button>
-<div id="menuArea" class="menu">
-<iframe id="menuFrame"></iframe>
-</div>
+<a href="yemek.png" target="_blank">
+<button>🍽 Yemek Menüsü</button>
+</a>
+
+<a href="icecek.png" target="_blank">
+<button>🍹 İçecek Menüsü</button>
+</a>
+
+<a href="tatli.png" target="_blank">
+<button>🍰 Tatlı Menüsü</button>
+</a>
 <footer>
 Afiyet Olsun
 </footer>

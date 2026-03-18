@@ -11,14 +11,23 @@
 position:absolute;
 top:20px;
 right:20px;
-font-size:14px;
+background:rgba(201,162,39,0.15);
+z-index:999;
+border:1px solid #c9a227;
+padding:6px 12px;
+border-radius:10px;
+backdrop-filter:blur(5px);
 }
 
 .language a{
 color:#c9a227;
 text-decoration:none;
-margin:5px;
+margin:0 5px;
 font-weight:bold;
+}
+
+.language a:hover{
+color:white;
 }
 body{
 margin:0;
@@ -26,10 +35,7 @@ font-family:Arial;
 background:linear-gradient(#4b0f19,#2a0710);
 color:#f5d7a1;
 text-align:center;
-<div class="language">
-<a href="index.html">TR</a> | 
-<a href="en.html">EN</a>
-</div>
+
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -142,7 +148,10 @@ transform:scale(0.97);
 </head>
 
 <body>
-
+<div class="language">
+<a href="index.html">TR</a> |
+<a href="en.html">EN</a>
+</div>
 <div class="logo-area">
 
 <img src="./logo.png" class="logo" alt="Kuşak Balık Logo">

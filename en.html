@@ -1,1 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuşak Balık Menü</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(#4b0f19,#2a0710);
+color:#f5d7a1;
+text-align:center;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+}
+
+header{
+padding:30px;
+font-size:34px;
+font-weight:bold;
+border-bottom:2px solid #c9a227;
+}
+.logo{
+width:150px;
+height:auto;
+display:block;
+margin:20px auto;
+opacity:0;
+animation:logoFade 1.5s ease forwards;
+}
+
+@keyframes logoFade{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.logo-area{
+padding-bottom:25px;
+border-bottom:2px solid #c9a227;
+width:65%;
+margin:auto;
+}
+
+.slogan{
+<div class="line"></div>
+font-size:18px;
+margin-top:5px;
+margin-bottom:20px;
+}
+button{
+background:#c9a227;
+border:none;
+padding:16px 35px;
+margin:12px;
+font-size:18px;
+border-radius:14px;
+cursor:pointer;
+width:85%;
+max-width:350px;
+white-space:nowrap;
+box-shadow:0 5px 12px rgba(0,0,0,0.3);
+}
+
+button:hover{
+background:#d4af37;
+transform:scale(1.03);
+transition:0.2s;
+}
+
+.menu{
+display:none;
+padding:20px;
+}
+
+iframe{
+transition:0.4s ease;
+width:95%;
+height:800px;
+border:none;
+margin-top:20px;
+}
+
+footer{
+margin-top:40px;
+padding:20px;
+border-top:2px solid #c9a227;
+width:65%;
+margin-left:auto;
+margin-right:auto;
+}
+.line{
+width:120px;
+height:2px;
+background:#c9a227;
+margin:20px auto;
+}
+
+button{
+transition:0.2s;
+box-shadow:0 5px 12px rgba(0,0,0,0.3);
+}
+
+button:active{
+transform:scale(0.97);
+  }
+</style>
+
+<script>
+  
+</script>
+
+</head>
+
+<body>
+
+<div class="logo-area">
+
+<img src="./logo.png" class="logo" alt="Kuşak Balık Logo">
+
+
+
+<p class="slogan">Denizden Sofranıza</p>
+<div class="line"></div>
+
+</div>
+
+<div>
+
+
+</div>
+
+<a href="yemek.png" target="_blank">
+<button>🍽 Yemek Menüsü</button>
+</a>
+
+<a href="icecek.png" target="_blank">
+<button>🍹 İçecek Menüsü</button>
+</a>
+
+<a href="tatli.png" target="_blank">
+<button>🍰 Tatlı Menüsü</button>
+</a>
+<footer>
+Afiyet Olsun
+</footer>
+
+</body>
+
+</html>
